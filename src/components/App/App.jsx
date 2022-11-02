@@ -64,7 +64,7 @@ class App extends Component {
             <Filter filter={filter} handleChange={this.getFilteredContacts} />
             <ContactList
               contacts={visibleContacts}
-              handleDelete={this.handleDelete}
+              onDelete={this.handleDelete}
             />
             </>
         )}

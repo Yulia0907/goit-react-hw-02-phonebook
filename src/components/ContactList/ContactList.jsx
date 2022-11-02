@@ -2,13 +2,14 @@ import PropTypes from 'prop-types';
 import { ContactListItem } from '../ContactListItem/ContactListItem';
 import { ListContacts } from './ContactList.styled';
 
-export const ContactList = ({ contacts, handleDelete }) => {
+
+export const ContactList = ({ contacts, onDelete }) => {
   return (
     <ListContacts>
       {contacts.map(({ id, name, number }) => {
         return (
           <ContactListItem
-            handleDelete ={handleDelete}
+            handleDelete={onDelete}
             key={id}
             id={id}
             name={name}
